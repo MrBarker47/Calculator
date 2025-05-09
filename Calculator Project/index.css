@@ -1,0 +1,93 @@
+.cover {
+  border: 4px solid black;
+  background-color: rgb(89, 106, 108);
+  display: flex;
+  justify-self: center;
+   padding: 20px;
+   margin: 229px;
+}
+.surround {
+ border: 4px solid black;
+
+}
+
+
+#text {
+display: flex;
+border: 2px solid black;
+height: 50px;
+width: 180px;
+background-color: antiquewhite;
+font-size: 30px;
+
+}
+
+button {
+  background-color: rgb(20, 133, 168);
+  color: rgb(255, 255, 255);
+  border-color: white;
+  font-size: 40px;
+  width: 60px;
+
+
+}
+
+input {
+  margin: 2px;
+  background-color: rgb(243, 163, 14);
+  color: rgb(0, 0, 0);
+  border-color: white;
+  font-size: 20px;
+  height: 60px;
+  width: 187px;
+}
+
+ 
+/* Responsive Layout */
+
+@media screen and (min-width: 1024px){
+  .cover {
+  border: 4px solid black;
+  background-color: rgb(84, 107, 109);
+  display: flex;
+  margin: 20px 220px;
+  }
+
+
+
+
+
+.surround {
+ border: 4px solid black;
+  
+}
+
+
+#text {
+display: flex;
+border: 2px solid black;
+height: 50px;
+width: 20%;
+background-color: antiquewhite;
+font-size: 30px;
+
+}
+
+button {
+  background-color: rgb(20, 133, 168);
+  color: rgb(255, 255, 255);
+  border-color: white;
+  margin: auto;
+  padding: 20px;
+}
+
+input {
+  margin: 2px;
+  background-color: rgb(243, 163, 14);
+  color: rgb(0, 0, 0);
+  border-color: white;
+  font-size: 20px;
+  height: 60px;
+  width: 187px;
+}
+}
