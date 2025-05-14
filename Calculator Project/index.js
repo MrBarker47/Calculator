@@ -5,12 +5,6 @@ const newOperator = '';
 const number2 = '';
 const newEqual = document.getElementById('equal');
 
-newEqual.addEventListener('click',(e) => {
-  console.log('button works');
-})
-
-
-
 // The functions for the different operations. 
 function add(a,b) {
   return a + b;
@@ -32,20 +26,26 @@ function divide(a,b) {
 }
 
 //Operator
-function operator() {
-  if(a + b) {
-    console.log(add())
-  } else if(a - b){
-    console.log(subtract())
-  } else if (a * b) {
-    console.log(multiply())
-  } else if (a / b) {
-    console.log(divide())
+function operate(a,b,operator) {
+  if(operator === '+') {
+    return add(a,b);
+  } else if (operator === "-") {
+    return subtract(a,b);
+  } else if (operator === "*") {
+    return multiply(a,b) 
+  } else if (operator === "/") {
+    return divide(a,b) 
   } else {
-    console.log('theres no input yet!')
+    return "Not connected";
   }
 }
 
+console.log(operate(5,2, "+"));
+
+
+  newEqual.addEventListener('click',(e) => {
+    
+ })
 
 function display() {
   btn.forEach(button => {
@@ -61,11 +61,17 @@ function clear() {
   reset.addEventListener('click', (e) =>{
    let message = document.getElementById('text').value=""
 })
-
 }
 
+function divide(a,b) {
+    if(b === 0) {
+      return "Error: Division by zero"
+    } else {
+      return a / b
+    }
+}
 
 
 display();
 clear();
-operator();
+
