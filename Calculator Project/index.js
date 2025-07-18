@@ -40,11 +40,11 @@ function operate(a,b,operator) {
   }
 }
 
-console.log(operate(5,2, "+"));
+
 
 
   newEqual.addEventListener('click',(e) => {
-    
+    console.log(operate(a,b, "+"));
  })
 
 function display() {
@@ -69,6 +69,10 @@ function divide(a,b) {
     } else {
       return a / b
     }
+}
+
+function expression(number,operator, number) {
+    
 }
 
 
