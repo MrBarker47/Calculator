@@ -16,8 +16,8 @@
 display: flex;
 border: 2px solid black;
 height: 50px;
-width: 180px;
-background-color: antiquewhite;
+width: 20%;
+background-color: rgb(178, 152, 118);
 font-size: 30px;
 
 }
@@ -45,12 +45,18 @@ input {
  
 /* Responsive Layout */
 
-@media screen and (min-width: 1024px){
-  .cover {
-  border: 4px solid black;
-  background-color: rgb(84, 107, 109);
+
+
+@media screen and (min-width: 1020px){
+.cover {
+    border: 4px solid rgb(47, 40, 40);
+  background-color: rgb(31, 98, 104);
   display: flex;
-  margin: 20px 220px;
+  justify-self: center;
+  margin: 100px;
+   width: 200px;
+}
+
   }
 
 
@@ -59,18 +65,16 @@ input {
 display: flex;
 border: 2px solid black;
 height: 50px;
-width: 20%;
-background-color: antiquewhite;
+width: 180px;
+background-color: rgb(241, 222, 197);
 font-size: 30px;
-
 }
 
 button {
-  /* background-color: rgb(20, 133, 168);
+  background-color: rgb(20, 133, 168);
   color: rgb(255, 255, 255);
   border-color: white;
-  margin: auto;
-  padding: 20px; */
+  padding: 2px;
 }
 
 input {
@@ -81,5 +85,4 @@ input {
   font-size: 20px;
   height: 60px;
   width: 187px;
-}
 }
