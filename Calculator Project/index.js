@@ -74,9 +74,10 @@ function divide(a,b) {
     }
 }
 
-function expression(number,operator, number) {
-    
+function expression(number1,operator, number2) {
+  return operate(number1, number2, operator);
 }
+
 
 
 display();
