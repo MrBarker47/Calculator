@@ -47,6 +47,8 @@ function operate(a,b,operator) {
     console.log(operate(a,b, "+"));
  })
 
+
+//  Display
 function display() {
   btn.forEach(button => {
     button.addEventListener('click', () =>{
@@ -57,6 +59,7 @@ function display() {
   
 }
 
+//Clear
 function clear() {
   reset.addEventListener('click', (e) =>{
    let message = document.getElementById('text').value=""
