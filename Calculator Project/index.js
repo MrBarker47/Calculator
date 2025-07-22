@@ -41,7 +41,7 @@ function operate(a,b,operator) {
 
 }
 
-  console.log(operate(5, 4, "*"));
+  // console.log(operate(5, 4, "*"));
 
 
 
@@ -72,15 +72,18 @@ function divide(a,b) {
     }
 }
 
-function expression(number1,operator, number2) {
-  return operate(number1, number2, operator);
-
-
+//Equals
+function solve(number, operator, number2) {
+  newEqual.addEventListener("click", (e) => {
+  
+  })
 }
+
 
 
 
 display();
 clear();
 operate();
-expression();
+solve();
+
