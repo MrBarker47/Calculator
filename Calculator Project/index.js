@@ -38,14 +38,12 @@ function operate(a,b,operator) {
   } else {
     return "Not connected";
   }
+
 }
 
+  console.log(operate(5, 4, "*"));
 
 
-
-  newEqual.addEventListener('click',(e) => {
-    console.log(operate(a,b, "+"));
- })
 
 
 //  Display
@@ -76,10 +74,13 @@ function divide(a,b) {
 
 function expression(number1,operator, number2) {
   return operate(number1, number2, operator);
+
+
 }
 
 
 
 display();
 clear();
-
+operate();
+expression();
