@@ -2,6 +2,12 @@ const btn = document.querySelectorAll('button');
 const reset = document.getElementById('clear');
 const newEqual = document.getElementById('equal');
 
+let number = '';
+let  newOperator = '';
+let number2 = '';
+
+
+
 // The functions for the different operations. 
 function add(a,b) {
   return a + b;
@@ -38,7 +44,7 @@ function operate(a,b,operator) {
 
 }
 
-  // console.log(operate(5, 4, "*"));
+  // console.log(operate(7, 5, "*"));
 
 //  Display
 function display() {
@@ -69,9 +75,11 @@ function divide(a,b) {
 //Equals
 function solve(number, newOperator, number2) {
   newEqual.addEventListener("click", (e) => {
-    let number = '';
-    let  newOperator = '';
-    let number2 = '';
+    let numbers = document.getElementById('text');
+    numbers.value += button.innerText;
+    number.value += button.innerText;
+    newOperator.value += button.innerText;
+    number2.value += button.innerText;
   })
 }
 
