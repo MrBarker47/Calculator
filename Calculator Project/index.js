@@ -1,8 +1,5 @@
 const btn = document.querySelectorAll('button');
 const reset = document.getElementById('clear');
-const number = '';
-const newOperator = '';
-const number2 = '';
 const newEqual = document.getElementById('equal');
 
 // The functions for the different operations. 
@@ -43,9 +40,6 @@ function operate(a,b,operator) {
 
   // console.log(operate(5, 4, "*"));
 
-
-
-
 //  Display
 function display() {
   btn.forEach(button => {
@@ -73,9 +67,11 @@ function divide(a,b) {
 }
 
 //Equals
-function solve(number, operator, number2) {
+function solve(number, newOperator, number2) {
   newEqual.addEventListener("click", (e) => {
-  
+    let number = '';
+    let  newOperator = '';
+    let number2 = '';
   })
 }
 
