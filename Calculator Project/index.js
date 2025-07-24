@@ -5,6 +5,7 @@ const newEqual = document.getElementById('equal');
 let number = '';
 let  newOperator = '';
 let number2 = '';
+let results;
 
 
 
@@ -76,10 +77,10 @@ function divide(a,b) {
 function solve(number, newOperator, number2) {
   newEqual.addEventListener("click", (e) => {
     let numbers = document.getElementById('text');
-    numbers.value += button.innerText;
-    number.value += button.innerText;
-    newOperator.value += button.innerText;
-    number2.value += button.innerText;
+    number.value += btn.innerText;
+    newOperator.value += btn.innerText;
+    number2.value += btn.innerText;
+    results.value += btn.innerText;
   })
 }
 
