@@ -75,13 +75,22 @@ function divide(a,b) {
 
 //Equals
 function solve(number, newOperator, number2) {
+  btn.forEach(button => {
   newEqual.addEventListener("click", (e) => {
     let numbers = document.getElementById('text');
-    number.value += btn.innerText;
-    newOperator.value += btn.innerText;
-    number2.value += btn.innerText;
-    results.value += btn.innerText;
+    numbers.value += button.innerText;
+    number.value += button.innerText;
+    newOperator.value += button.innerText;
+    number2.value += button.innerText;
+
+
+
+    // number.value += btn.innerText;
+    // newOperator.value += btn.innerText;
+    // number2.value += btn.innerText;
+    // results.value += btn.innerText;
   })
+ })
 }
 
 
