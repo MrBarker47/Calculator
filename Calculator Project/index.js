@@ -77,10 +77,10 @@ function solve(number, newOperator, number2) {
   btn.forEach(button => {
     newEqual.addEventListener("click", (e) =>{
       let numbers = document.getElementById('text');
-      numbers.value += button.innerText;
-      number.value += button.innerText;
-      newOperator.value += button.innerText;
-      number2.value += button.innerText;
+      numbers.value = "";
+      number.value = ""
+      newOperator.value = ""
+      number2.value = ""
     })
   })
 }
