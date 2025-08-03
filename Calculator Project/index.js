@@ -45,7 +45,7 @@ function operate(a,b,operator) {
 
 }
 
-  console.log(operate(2, 5, "+"));
+  // console.log(operate(2, 5, "+"));
 
 //  Display
 function display() {
@@ -74,17 +74,31 @@ function divide(a,b) {
 }
 
 //Equals
-function solve(number, newOperator, number2) {
-  btn.forEach(button => {
-    newEqual.addEventListener("click", (e) =>{
-      let numbers = document.getElementById('text');
-      numbers.value += btn.innerText;
-      number += "";
-      newOperator += "";
-      number2 += "";
-    })
+function solve() {
+  newEqual.addEventListener("click", (e) => {
+    let numbers = document.getElementById('text');
+    numbers.value += newEqual.innerText;
+    number += "";
+    newOperator += "";
+    number2 += "";
   })
 }
+
+
+
+
+
+// function solve(number, newOperator, number2) {
+//   btn.forEach(button => {
+//     newEqual.addEventListener("click", (e) =>{
+//       let numbers = document.getElementById('text');
+//       numbers.value += btn.innerText;
+//       number += "";
+//       newOperator += "";
+//       number2 += "";
+//     })
+//   })
+// }
 
 
 
