@@ -5,7 +5,7 @@ const newEqual = document.getElementById('equal');
 let number = '';
 let newOperator = '';
 let number2 = '';
-let isSecondNumber = "";
+let isSecondNumber = false;
 
 
 
@@ -88,12 +88,14 @@ function solve(number, newOperator, number2) {
 
 
 
+// function getValue() {
+//       let numbers = document.getElementById('text').value;
+//       let part = numbers.split(/([+\-*/])/);
 
-
+// }
 
 display();
 clear();
 operate();
 solve();
-
 
