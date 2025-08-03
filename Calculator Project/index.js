@@ -3,8 +3,9 @@ const reset = document.getElementById('clear');
 const newEqual = document.getElementById('equal');
 
 let number = '';
-let  newOperator = '';
+let newOperator = '';
 let number2 = '';
+let isSecondNumber = "";
 
 
 
@@ -44,7 +45,7 @@ function operate(a,b,operator) {
 
 }
 
-  // console.log(operate(7, 5, "*"));
+  console.log(operate(2, 5, "+"));
 
 //  Display
 function display() {
@@ -77,13 +78,15 @@ function solve(number, newOperator, number2) {
   btn.forEach(button => {
     newEqual.addEventListener("click", (e) =>{
       let numbers = document.getElementById('text');
-      numbers.value = "";
-      number.value = ""
-      newOperator.value = ""
-      number2.value = ""
+      numbers.value += btn.innerText;
+      number += "";
+      newOperator += "";
+      number2 += "";
     })
   })
 }
+
+
 
 
 
