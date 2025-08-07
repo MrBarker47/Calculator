@@ -77,11 +77,11 @@ function divide(a,b) {
 function solve() {
   newEqual.addEventListener("click", (e) => {
     let numbers = document.getElementById('text');
-    numbers.value += newEqual.innerText;
-    number += "";
-    newOperator += "";
-    number2 += "";
-  })
+      numbers.value += btn.innerText;
+      number += "";
+      newOperator += "";
+      number2 += "";
+   })
 }
 
 
