@@ -45,7 +45,8 @@ function operate(a,b,operator) {
 
 }
 
-  // console.log(operate(2, 5, "+"));
+console.log(operate(2, 4, "*"))
+ 
 
 //  Display
 function display() {
@@ -84,21 +85,21 @@ function solve() {
    })
 }
 
+// function solve() {
+//   newEqual.addEventListener("click", () => {
+//     let input = document.getElementById('text');
+
+//     let [a, operator, b] = getValue();
 
 
+//     let result = operate(a,b, operator); 
 
-
-// function solve(number, newOperator, number2) {
-//   btn.forEach(button => {
-//     newEqual.addEventListener("click", (e) =>{
-//       let numbers = document.getElementById('text');
-//       numbers.value += btn.innerText;
-//       number += "";
-//       newOperator += "";
-//       number2 += "";
-//     })
-//   })
+//     input.value = result;
+//   });
 // }
+
+
+  // console.log(solve(2, 5, "+"));
 
 
 
