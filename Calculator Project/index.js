@@ -71,12 +71,12 @@ function divide(a,b) {
 }
 
 //Equals
-// function solve() {
-//   newEqual.addEventListener("click", (e) => {
-//     let numbers = document.getElementById('text');
+function solve() {
+  newEqual.addEventListener("click", (e) => {
+    let numbers = document.getElementById('text');
     
-//    })
-// }
+   })
+}
 
 
 
