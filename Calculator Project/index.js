@@ -45,16 +45,14 @@ function operate(a,b,operator) {
 
 console.log(operate(2, 4, "*"))
  
-
 //  Display
 function display() {
   btn.forEach(button => {
     button.addEventListener('click', () =>{
         let numbers = document.getElementById('text')
- 
+        numbers.value += button.innerText;
     })
   })
-  
 }
 
 //Clear
