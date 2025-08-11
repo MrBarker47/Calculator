@@ -1,7 +1,6 @@
 const btn = document.querySelectorAll('button');
 const reset = document.getElementById('clear');
 const newEqual = document.getElementById('equal');
-
 let number = '';
 let newOperator = '';
 let number2 = '';
@@ -42,7 +41,6 @@ function operate(a,b,operator) {
   } else {
     return "Not connected";
   }
-
 }
 
 console.log(operate(2, 4, "*"))
@@ -53,7 +51,7 @@ function display() {
   btn.forEach(button => {
     button.addEventListener('click', () =>{
         let numbers = document.getElementById('text')
-        numbers.value += button.innerText;
+ 
     })
   })
   
@@ -63,7 +61,7 @@ function display() {
 function clear() {
   reset.addEventListener('click', (e) =>{
    let message = document.getElementById('text').value=""
-})
+ })
 }
 
 function divide(a,b) {
@@ -75,39 +73,16 @@ function divide(a,b) {
 }
 
 //Equals
-function solve() {
-  newEqual.addEventListener("click", (e) => {
-    let numbers = document.getElementById('text');
-      numbers.value += btn.innerText;
-      number += "";
-      newOperator += "";
-      number2 += "";
-   })
-}
-
 // function solve() {
-//   newEqual.addEventListener("click", () => {
-//     let input = document.getElementById('text');
-
-//     let [a, operator, b] = getValue();
-
-
-//     let result = operate(a,b, operator); 
-
-//     input.value = result;
-//   });
+//   newEqual.addEventListener("click", (e) => {
+//     let numbers = document.getElementById('text');
+    
+//    })
 // }
 
 
-  // console.log(solve(2, 5, "+"));
 
 
-
-// function getValue() {
-//       let numbers = document.getElementById('text').value;
-//       let part = numbers.split(/([+\-*/])/);
-
-// }
 
 display();
 clear();
