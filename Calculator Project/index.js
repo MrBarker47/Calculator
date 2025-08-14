@@ -1,10 +1,11 @@
 const btn = document.querySelectorAll('button');
 const reset = document.getElementById('clear');
 const newEqual = document.getElementById('equal');
-let a = '';
-let  operator = '';
-let number2 = '';
 
+let number = '';
+let  newOperator = '';
+let number2 = '';
+let results;
 
 
 
@@ -41,11 +42,10 @@ function operate(a,b,operator) {
   } else {
     return "Not connected";
   }
-
 }
 
-  // console.log(operate(7, 5, "*"));
-
+console.log(operate(2, 4, "*"))
+ 
 //  Display
 function display() {
   btn.forEach(button => {
@@ -54,14 +54,13 @@ function display() {
         numbers.value += button.innerText;
     })
   })
-  
 }
 
 //Clear
 function clear() {
   reset.addEventListener('click', (e) =>{
    let message = document.getElementById('text').value=""
-})
+ })
 }
 
 function divide(a,b) {
@@ -75,9 +74,14 @@ function divide(a,b) {
 //Equals
 function solve() {
   newEqual.addEventListener("click", (e) => {
-    console.log("Hello, World");
+    let numbers = document.getElementById('text');
+    number.value += btn.innerText;
+    newOperator.value += btn.innerText;
+    number2.value += btn.innerText;
+    results.value += btn.innerText;
   })
 }
+
 
 
 
