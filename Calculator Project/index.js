@@ -1,11 +1,10 @@
 const btn = document.querySelectorAll('button');
 const reset = document.getElementById('clear');
 const newEqual = document.getElementById('equal');
-
-let number = '';
-let  newOperator = '';
+let a = '';
+let  operator = '';
 let number2 = '';
-let results;
+
 
 
 
@@ -74,23 +73,10 @@ function divide(a,b) {
 }
 
 //Equals
-function solve(number, newOperator, number2) {
-  btn.forEach(button => {
+function solve() {
   newEqual.addEventListener("click", (e) => {
-    let numbers = document.getElementById('text');
-    numbers.value += button.innerText;
-    number.value += button.innerText;
-    newOperator.value += button.innerText;
-    number2.value += button.innerText;
-
-
-
-    // number.value += btn.innerText;
-    // newOperator.value += btn.innerText;
-    // number2.value += btn.innerText;
-    // results.value += btn.innerText;
+    console.log("Hello, World");
   })
- })
 }
 
 
