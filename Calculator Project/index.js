@@ -74,11 +74,7 @@ function divide(a,b) {
 //Equals
 function solve() {
   newEqual.addEventListener("click", (e) => {
-    let numbers = document.getElementById('text');
-    number.value += btn.innerText;
-    newOperator.value += btn.innerText;
-    number2.value += btn.innerText;
-    results.value += btn.innerText;
+      console.log("Hello, World");
   })
 }
 
