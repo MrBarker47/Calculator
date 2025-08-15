@@ -2,10 +2,6 @@ const btn = document.querySelectorAll('button');
 const reset = document.getElementById('clear');
 const newEqual = document.getElementById('equal');
 
-let number = '';
-let  newOperator = '';
-let number2 = '';
-let results;
 
 
 
@@ -44,7 +40,6 @@ function operate(a,b,operator) {
   }
 }
 
-console.log(operate(2, 4, "*"))
  
 //  Display
 function display() {
@@ -74,16 +69,28 @@ function divide(a,b) {
 //Equals
 function solve() {
   newEqual.addEventListener("click", (e) => {
-      console.log("Hello, World");
-  })
+    let numbers = document.getElementById('text');
+    // let newEqual = document.getElementById('equal').value = "";
+    const match = numbers.value.match(/^(\d+)([+\-*/])(\d+)$/);
+    if (match) {
+      let a =  Number(match[1]);
+      let operator = match[2];
+      let b = Number (match[3]);
+      let result = operate(a, b, operator);
+      numbers.value = result;
+    } else {
+      numbers.value = "Error";
+    }
+  });
 }
 
 
-
-
-
-display();
-clear();
 operate();
 solve();
+display();
+clear()
+
+
+
+
 
